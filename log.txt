@@ -1,0 +1,20 @@
+2026-10-27 08:00:01 INFO Server started
+2026-10-27 08:02:14 INFO User logged in: alice
+2026-10-27 08:05:32 WARNING Disk space is getting low
+2026-10-27 08:07:48 ERROR Database connection failed
+2026-10-27 08:08:03 INFO Retrying database connection
+2026-10-27 08:08:05 INFO Database connection restored
+2026-10-27 08:12:19 WARNING Response time exceeded 2 seconds
+2026-10-27 08:14:41 ERROR Request timed out: /api/reports
+2026-10-27 08:15:02 INFO User logged out: alice
+2026-10-27 08:18:27 INFO Backup started
+2026-10-27 08:20:10 ERROR Backup failed: permission denied
+2026-10-27 08:22:36 WARNING Memory usage above 80 percent
+2026-10-27 08:25:00 INFO Backup retried
+2026-10-27 08:26:44 INFO Backup completed successfully
+2026-10-27 08:30:12 ERROR Invalid configuration value
+2026-10-27 08:31:09 INFO Configuration reloaded
+2026-10-27 08:35:51 WARNING Multiple failed login attempts detected
+2026-10-27 08:38:16 INFO Health check passed
+2026-10-27 08:42:33 ERROR Service unavailable: payment-api
+2026-10-27 08:45:00 INFO Server shutting down
