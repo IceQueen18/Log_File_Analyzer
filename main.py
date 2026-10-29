@@ -11,19 +11,24 @@ except FileNotFoundError:
     print(f"Sorry, the file {path} does not exist")
 else:
     #read the contents line by line
-    words = contents.splitlines()
-    for word in words:
-        fields = word.split()
-        if fields[2] == 'INFO' in word:
+    lines = contents.splitlines()
+    for line in lines:
+        #check each word in the line for the index position
+        #the index position for each word I am searching is at word[2]
+        
+        word = line.split()
+        if len(word) < 3:
+            continue
+        if word[2] == 'INFO':
             info += 1
 
-        if fields[2] == 'ERROR' in word:
+        if word[2] == 'ERROR':
             error +=1
 
-        if fields[2] == 'WARNING' in word:
+        if word[2] == 'WARNING':
             warning += 1
     
-    if words == []:
+    if lines == []:
         print(f"There are 0 entries in this file")
     else:    
         print(f"There are {info} INFO in this file")
